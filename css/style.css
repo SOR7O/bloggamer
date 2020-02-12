@@ -1,0 +1,238 @@
+/* https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(18, 29, 47);
+  }
+  img {
+    max-width: 100%;
+  }
+  p{
+    font-size: 1em;
+  }
+  .site-header {
+    padding: 1.25em 0;
+    text-align: center;
+  }
+  .container {
+    max-width: 75em;
+    margin: 0 auto;
+  }
+  .bar {
+    background-color: rgb(201, 34, 52);
+    overflow: hidden;
+    border-style: solid;
+    border-radius: 1.25em;
+    border-color: rgb(33, 197, 234);
+    text-align: center;
+  }
+  .main-nav {
+    padding: 1.25em 0;
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .main-content {
+    margin-top: 2.5em;
+    padding: 0;
+  }
+  /* Media query */
+  @media (min-width: 768px) {
+    .main-content {
+      width: 75%;
+      float: left;
+    }
+    .sidebar .sidebar-other {
+      width: 20%;
+      float: right;
+      padding: 0;
+      margin-top: 3em;
+    }
+  }
+  /* Acceder a los hijos de un elemento HTML */
+  .main-nav a:hover {
+      background-color: rgb(33, 197, 234);
+      border-style: solid;
+      border-radius: 1.25em;
+      border-color: rgb(201, 34, 52);
+  }
+  .main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.375em;
+    padding: 1.25em;
+    text-align: center;
+    display: block;
+  }
+  @media (min-width: 768px) {
+    .main-nav a {
+      display: inline;
+    }
+  }
+  .image-logo{
+    width: 58em;
+    height: 15em;
+    position: relative;
+    
+}
+
+.main-content p{
+    color: white;
+}
+.sidebar a{
+    color: white;
+}
+.footer p, h2{
+    color: white;
+}
+.icono{
+    max-width: 4em;
+    max-height: 4em;
+    padding-right: 1em;
+    margin-top: 0;
+}
+h2 {
+  color: white;
+  margin-bottom: 1.25em;
+}
+.entry{
+  margin-bottom: 3.75em;
+}
+.entry:last-of-type{
+  margin-bottom: 0;
+}
+.entry img{
+  display: block;
+}
+.entry p {
+text-align: justify;
+}
+@media (min-width: 768px) {
+  .entry img {
+    width: 18.75em;
+    float: left;
+    margin: 0 1.25em 0 0;
+  }
+}
+/*  Sidebar */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li {
+  padding: 0.625em;
+}
+.sidebar ul li:hover {
+  background-color: rgb(33, 197, 234);
+}
+.sidebar ul li a {
+  font-size: 1.25em;
+  text-decoration: none;
+}
+.sidebar ul li:hover a {
+  color: #ffffff;
+}
+/* Footer */
+.footer-site {
+  background-color: rgb(201, 34, 52); 
+  margin-top: 2.75em;
+  padding-top: 1.5em;
+  text-align: center;
+}
+
+.footer-site h2 {
+  color: #ffffff;
+}
+.footer-site a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.25em;
+  margin-right: 0.9375em;
+}
+.footer-site a:last-of-type {
+  margin-right: 0;
+}
+.footer-site p {
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .footer-site .about-us {
+    float: left;
+    width: 60%;
+    text-align: left;
+    text-align: center;
+  }
+  .footer-site .footer-menu {
+    float: right;
+    width: 40%;
+    text-align: right;
+    text-align: center;
+  }
+}
+@media(min-width:768px){
+  .footer-site .footer-social{
+    float: right;
+    width: 40%;
+    text-align: right;
+    text-align: center;
+  }
+
+}
+.footer-site .about-us p {
+  text-align: justify;
+}
+.footer-menu{
+  background-color: rgb(201, 34, 52);
+  border-color: rgb(33, 197, 234);
+}
+.footer-menu a:hover{
+  background-color: rgb(33, 197, 234);
+  border-color: rgb(201, 34, 52);
+  border-style: solid;
+  border-radius: 1.25em;
+}
+.main-content p{
+  text-align: justify;
+}
+.button{
+  background-color: rgb(33, 197, 234);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 0.625em 3.75em;
+  margin-top: 1em;
+  font-size: 1.25em;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease-in-out;
+}
+.copyright{
+  font-size: 1.25em;
+  background-color: rgb(33, 197, 234);
+  padding: 0.375em 0.875em;
+  
+}
+/*Las borderpropiedades CSS le permiten especificar el estilo, el ancho y el color del borde de un elemento.
+*/
+.sidebar li:hover{
+  border-style:solid;
+  border-radius: 1.25em;
+  border-color: rgb(33, 197, 234);
+}
+/*transform: transformamos el elemento al pasar el mouse por encima
+su tamaño de escale es 1.5*/
+.footer-social img:hover{
+ transform:scale(1.5);
+ -moz-transform: scale(1.5); /* sirve para firefox*/
+ -webkit-transform: scale(1.5);/* sirve para chrome*/
+ -o-transform: scale(1.5); /* sirve para opera*/
+}
