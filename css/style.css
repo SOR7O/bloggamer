@@ -51,10 +51,10 @@ html {
       width: 75%;
       float: left;
     }
-    .sidebar .sidebar-other {
-      width: 20%;
+    .sidebar {
+      width: 25%;
       float: right;
-      padding: 0;
+      padding-left: 5em;
       margin-top: 3em;
     }
   }
@@ -94,7 +94,7 @@ html {
 .footer p, h2{
     color: white;
 }
-.icono{
+.icono{ 
     max-width: 4em;
     max-height: 4em;
     padding-right: 1em;
@@ -148,7 +148,6 @@ text-align: justify;
   padding-top: 1.5em;
   text-align: center;
 }
-
 .footer-site h2 {
   color: #ffffff;
 }
@@ -163,6 +162,10 @@ text-align: justify;
 }
 .footer-site p {
   color: #ffffff;
+}
+.footer-social h2{
+  font-size: 1.25em ;
+  padding-top: 1.5em;
 }
 @media (min-width: 768px) {
   .footer-site .about-us {
@@ -219,7 +222,6 @@ text-align: justify;
   font-size: 1.25em;
   background-color: rgb(33, 197, 234);
   padding: 0.375em 0.875em;
-  
 }
 /*Las borderpropiedades CSS le permiten especificar el estilo, el ancho y el color del borde de un elemento.
 */
@@ -235,4 +237,8 @@ su tamaño de escale es 1.5*/
  -moz-transform: scale(1.5); /* sirve para firefox*/
  -webkit-transform: scale(1.5);/* sirve para chrome*/
  -o-transform: scale(1.5); /* sirve para opera*/
+}
+.copyright strong{
+  color:white;
+  font-weight: bold;
 }
